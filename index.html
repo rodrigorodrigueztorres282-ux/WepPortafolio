@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">RODRIGO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Perfil.jpeg" alt="">
+            </div>
+            <h1>RODRIGO RODRIGUEZ</h1>
+            <h2>Diseño multimedia y animación</h2>
+            <div class="redes">
+                <a href="https://www.behance.net/rodrigorodrigu261"><i class="fa-brands fa-behance"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Rodrigo Rodriguez.</span> Diseñador Multimedia y Animador recién graduado, con experiencia práctica de 3 años en creación de contenido digital y gestión de redes sociales. Sólidos conocimientos en animación, diseño gráfico, producción audiovisual y fotografía, con capacidad para transformar ideas en productos visuales de alto impacto. Destacado por mi proyecto "Molcajete de Leyendas", reconocido por el INAH, donde realicé mi servicio social y obtuve carta de recomendación oficial. Proactivo, detallista, comprometido y listo para aportar valor a equipos creativos que busquen innovación visual. </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            783-276-62-87
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            rodrigorodrigueztorres282@gmail.com
+                        </li>
+                        <li>
+                            <strong>Behance</strong>
+                            Rodrigo Rodriguez
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Yautepec Oacalco Avenida Nacional 62737
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-video"></i>
+                            <span>VIDEO</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-music"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            <button onclick="descargarCarta()">
+                Carta de Recomendación <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Skills</h3>
+                    <div class="skill">
+                        <span>Diseño Gráfico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Animación 2D</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Motion Graphics</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Edición de Video</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Edición de Imágenes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manipulación de Imágenes</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Diseño Publicitario</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación Visual</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ilustración Digital</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Contenido Digital</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Herramientas Skills</h3>
+                    <div class="skill">
+                        <span>Adobe After Effects</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Animate</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Bridge</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Mailchimp</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Meta Business Suite</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>84%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Fray Luca Paccioli</span>
+                        <span class="fecha">2023 - 2026</span>
+                        <p>Formación en diseño gráfico, animación, producción audiovisual y comunicación digital, con experiencia como Community Manager Junior durante 2 años en NPH México. Participé en el proyecto “Molcajete de Leyendas”, desarrollando sus animaciones, proyecto que posteriormente me permitió realizar mi servicio social en el INAH, donde trabajé en animación 2D y recursos gráficos institucionales.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item izq">
+                        <h4>Servicio Social</h4>
+                        <span class="casa">INAH</span>
+                        <span class="fecha">febrero I 2025 - Marzo I 2026</span>
+                        <p> Participé en la creación de animaciones 2D, materiales audiovisuales y recursos gráficos para proyectos de comunicación institucional del INAH, realizando edición de imágenes, contenido digital y adaptación de materiales. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Community Manager Junior</h4>
+                        <span class="casa">NPH-Mexico</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p> Desarrollé contenido gráfico y audiovisual para las redes sociales de NPH México, realizando diseño de publicaciones, fotografía, edición de video y elaboración de guiones. También adapté piezas gráficas y contenido digital respetando la identidad visual y línea gráfica institucional. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Diseñador Grafico</h4>
+                        <span class="casa">INAH</span>
+                        <span class="fecha">Febrero I 2025 - Marzo I 2026</span>
+                        <p> Diseñé y desarrollé animaciones 2D, materiales audiovisuales y recursos gráficos institucionales para proyectos de difusión y comunicación del INAH. Realicé edición y manipulación de imágenes, creación y adaptación de contenido digital para redes sociales, así como ajustes y mejoras de materiales según las necesidades de cada proyecto. Mi desempeño fue respaldado mediante una carta de recomendación oficial del INAH, destacando mi responsabilidad, creatividad y compromiso profesional. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Campaña Navideña.png" alt="">
+                    <div class="overlay">
+                        <h3>Campaña Navideña</h3>
+                        <p>NPH-Mexico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Dia del Niño.png" alt="">
+                    <div class="overlay">
+                        <h3>Dia del Niño</h3>
+                        <p>NPH-Mexico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Psicología.png" alt="">
+                    <div class="overlay">
+                        <h3>Publicación Psicología</h3>
+                        <p>NPH-Mexico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/6.png" alt="">
+                    <div class="overlay">
+                        <h3>Campaña dia de la mujer</h3>
+                        <p>NPH-Mexico</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/1.png" alt="">
+                    <div class="overlay">
+                        <h3>Publicidad Gastronómica</h3>
+                        <p>Freelancer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/2.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Publicitario</h3>
+                        <p>Freelancer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/3.png" alt="">
+                    <div class="overlay">
+                        <h3>Campaña Publicitaria</h3>
+                        <p>Freelancer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/4.png" alt="">
+                    <div class="overlay">
+                        <h3>Publicidad Gastronómica</h3>
+                        <p>Freelancer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/5.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Publicitario</h3>
+                        <p>Freelancer</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Boda-.gif" alt="">
+                    <div class="overlay">
+                        <h3>Animación Boda</h3>
+                        <p>S.S INAH</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Bordado horizontal.gif" alt="">
+                    <div class="overlay">
+                        <h3>Animación Tapete Tradicional</h3>
+                        <p>S.S INAH</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Botellón-perro-hombre.gif" alt="">
+                    <div class="overlay">
+                        <h3>Animación Pieza Arqueologica</h3>
+                        <p>S.S INAH</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Carnaval.gif" alt="">
+                    <div class="overlay">
+                        <h3>Animación Carnaval</h3>
+                        <p>S.S INAH</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Tlacuache mayor.gif" alt="">
+                    <div class="overlay">
+                        <h3>Animación Tlacuache Mayor</h3>
+                        <p>S.S INAH</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Zorro Yucateco.gif" alt="">
+                    <div class="overlay">
+                        <h3>Animación Zorro Yucateco</h3>
+                        <p>S.S INAH</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Visor de imágenes -->
+    <div id="visor-imagen" class="visor-imagen">
+        <span class="cerrar">&times;</span>
+        <img id="imagen-grande" src="" alt="">
+    </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+            <a href="#inicio" class="arriba">
+               <i class="fa-solid fa-angles-up"></i>
+            </a>
+        <div class="redes">
+            <a href="https://www.behance.net/rodrigorodrigu261" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-behance"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="footer-info">
+            <span>RODRIGO &middot; Diseño Multimedia &amp; Animación &copy; 2026. Todos los derechos reservados.</span>
+            <a href="https://wa.me/5217772671070?text=Hola%20Rodrigo,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo%20sobre%20un%20proyecto."
+            class="whatsapp-button" target="_blank" rel="noopener noreferrer">
+            CREEMOS JUNTOS →
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
